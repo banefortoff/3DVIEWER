@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1480</width>
+    <height>910</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1480</width>
+    <height>910</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1480</width>
+    <height>910</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>3DViewer_v1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="MyGLWidget" name="openGLWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>981</width>
+      <height>860</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>981</width>
+      <height>860</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>981</width>
+      <height>860</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_name">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_vertex">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_polygons">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>120</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_name_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Файл</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_vertex_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Вершины</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_polygons_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Рёбра</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_2 {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_info">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Перемещение модели</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_sdvig_minus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_sdvig_plus">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>70</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton_sdvig_x">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_sdvig_y">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_sdvig_z">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_sdvig">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>130</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>0,25</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_3
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_info_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Поворот модели</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_turn_minus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_turn_plus">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>70</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QRadioButton" name="radioButton_turn_x">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_turn_y">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_turn_z">
+        <property name="styleSheet">
+         <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;</string>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_turn">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>130</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>0,25</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_4
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_info_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Масштаб</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_scale_minus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_scale_plus">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_scale">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>1,1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>10</y>
+      <width>231</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_5
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="colorButton_v">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Вершин</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="colorButton_p">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Полигонов</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="colorButton_f">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Фона</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Выберите цвет</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>160</y>
+      <width>231</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_6
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="v_type_Button_s">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Квадрат</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="v_type_Button_n">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Отсутсвие</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="v_type_Button_c">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Круг</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Способ отображения вершин</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>460</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_7
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_info_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Изменение размера вершин</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vertex_size_minus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vertex_size_plus">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_vertex_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>600</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_8
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_info_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Изменение толщины рёбер</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_poly_size_minus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_poly_size_plus">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_poly_size">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>310</y>
+      <width>231</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_9
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="p_type_Button_s">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Сплошная</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p_type_Button_d">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Пунктирная</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Способ отображения рёбер</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>740</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_10
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="typeButton_parallel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Параллельная</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="typeButton_central">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Центральная</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Выберите тип проекции</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_11" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>740</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_11
+ {
+	background-color: black;
+	border: 2px solid white;
+     border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="recordButton_screen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>screenshot</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="recordButton_gif">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>gif</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     background-color: rgb(87, 86, 88);
+	border: 2px solid white;
+     border-radius: 20px;
+     color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Запись</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1480</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Открыть файл модели</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Выбрать файл из католога</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Сохранить настройки</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Загрузить настройки</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>mainwindow.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
